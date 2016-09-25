@@ -126,6 +126,7 @@ function startSingleScreenApp(params) {
           titleImage={screen.titleImage}
           component={screen.screen}
           passProps={{
+            ...params.passProps,
             navigatorID: navigatorID,
             screenInstanceID: screenInstanceID,
             navigatorEventID: navigatorEventID
